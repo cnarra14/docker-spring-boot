@@ -12,13 +12,15 @@ Tested with
 ## How to run this?
 ```bash
 $ git clone https://github.com/cnarra14/docker-spring-boot.git
+
 $ cd docker-spring-boot
+
 $ mvn clean package
+
 $ java -jar target/spring-boot-web.jar
 
   access http://localhost:8080
 
-//dockerize
 
 // create a docker image
 $ docker build -t spring-boot:1.0 .
@@ -26,5 +28,5 @@ $ docker build -t spring-boot:1.0 .
 // run it
 $ docker run -d -p 8080:8080 -t spring-boot:1.0
 
-  access http://localhost:8080
+  access in browser : http://localhost:8080
 ```
